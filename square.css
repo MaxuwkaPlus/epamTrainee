@@ -1,19 +1,43 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* настройка флекс*/
+
 body {
     display: flex;
     flex-wrap: wrap;
-    height: 700px;
+    height: 1500px;
     width: 1500px;
 }
+
 div {
     height: 200px;
     width: 250px;
 }
+/* псевдоклассы */
 
 div:first-child {
     background: linear-gradient(rgb(174, 219, 255), rgb(99, 180, 255));;
     border: solid;
     border-color: blue;
-    margin: 0 0 0 0;
+    margin: 0 0 0 23px;
 }
 
 div:nth-child(2) {
@@ -21,62 +45,32 @@ div:nth-child(2) {
     margin: 0 0 0 25px;
 }
 
-div:nth-child(3) {
+div:nth-child(3n) {
     background:linear-gradient(rgb(168, 111, 111), rgb(192, 0, 0));
     margin: 0 0 0 25px;
 }
 
-div:nth-child(4) {
+div:nth-child(n+4):nth-child(-n+5) {
     background:linear-gradient(rgb(189, 255, 206), rgb(99, 255, 151));
     margin: 0 0 0 25px;
 }
 
-div:nth-child(5) {
+div:nth-child(n+7):nth-child(-n+8) {
     background:linear-gradient(rgb(189, 255, 206), rgb(99, 255, 151));
     margin: 0 0 0 25px;
 }
 
-div:nth-child(6) {
-    background:linear-gradient(rgb(168, 111, 111), rgb(192, 0, 0));
-    margin: 0 0 0 0;
-}
-div:nth-child(7) {
+div:nth-child(n+10):nth-child(-n+11) {
     background:linear-gradient(rgb(189, 255, 206), rgb(99, 255, 151));
     margin: 0 0 0 25px;
 }
 
-div:nth-child(8) {
-    background:linear-gradient(rgb(189, 255, 206), rgb(99, 255, 151));
-    margin: 0 0 0 25px;
-}
-div:nth-child(9) {
-    background:linear-gradient(rgb(168, 111, 111), rgb(192, 0, 0));
-    margin: 0 0 0 25px;
-}
-
-div:nth-child(10) {
-    background:linear-gradient(rgb(189, 255, 206), rgb(99, 255, 151));
-    margin: 0 0 0 25px;
-}
-div:nth-child(11) {
-    background:linear-gradient(rgb(189, 255, 206), rgb(99, 255, 151));
-    margin: 0 0 0 0;
-}
-
-div:nth-child(12) {
-    background:linear-gradient(rgb(168, 111, 111), rgb(192, 0, 0));
-    margin: 0 0 0 25px;
-}
-div:nth-child(13) {
+div:nth-child(n+13):nth-child(-n+14) {
     background:linear-gradient(rgb(189, 255, 206), rgb(99, 255, 151));
     margin: 0 0 0 25px;
 }
 
-div:nth-child(14) {
-    background:linear-gradient(rgb(189, 255, 206), rgb(99, 255, 151));
-    margin: 0 0 0 25px;
-}
-div:nth-child(15) {
+div:last-child {
     background:linear-gradient(rgb(174, 219, 255), rgb(99, 180, 255));;
     border: ridge;
     border-color: rgb(255, 255, 255);
